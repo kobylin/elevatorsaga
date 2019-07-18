@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Elevator Saga - the elevator programming game</title>
+    <title>Beetroot - Lift me up</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="font-awesome-4.1-1.0/css/font-awesome.min.css" type="text/css" media="all">
-    <link href='//fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="libs/codemirror/codemirror.css">
     <link rel="stylesheet" href="libs/codemirror/themes/solarized.css">
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
@@ -136,14 +136,15 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1 class="left">Elevator Saga <em class="emphasis-color">The elevator programming game</em></h1>
-            <a class="right" href="https://github.com/magwo/elevatorsaga/wiki/">Wiki & Solutions</a>
-            <a class="right" href="documentation.html#docs">Documentation</a>
-            <a class="right" href="documentation.html">Help</a>
+    <div class="header">
+        <div class="header__container">
+            <img class="header__logo" src="./images/logo.png" alt="">
+            <h1 class="header__title">The elevator programming game</h1>
+            <a class="header__link" href="documentation.html#docs">Documentation</a>
+            <a class="header__link" href="documentation.html">Help</a>
         </div>
-
+    </div>
+    <div class="container container__body">
         <noscript>
             <h2>Your browser does not appear to support JavaScript. This page contains a browser-based programming game implemented in JavaScript.</h2>
         </noscript>
@@ -180,12 +181,19 @@
         <div style="margin-top: 20px">
             <h3>Confused? Open the <a href="documentation.html">Help and API documentation</a> page</h3>
         </div>
-        <div class="footer">
-            <h4>Made by Magnus Wolffelt and contributors</h4>
-            <h4>Version <span class="emphasis-color">1.6.5</span></h4>
-            <h4><a href="https://github.com/magwo/elevatorsaga">Source code</a> on GitHub</h4>
-            <h4><a href="test/index.html">Run tests</a></h4>
-        </div>
+    </div>
+    <div class="footer">
+        <h3>Join us at <a href="https://beetroot.se/">Beetroot!</a></h3>
+    </div>
+
+    <div class="sign-up__container">
+        <form class="sign-up">
+            <h1 class="sign-up-title">Sign up in seconds</h1>
+            <input type="text" class="sign-up-input" placeholder="What's your name?" autofocus>
+            <input type="text" class="sign-up-input" placeholder="What's your email?" autofocus>
+            <input type="text" class="sign-up-input" placeholder="What's your phone?" autofocus>
+            <input type="submit" value="Start!" class="sign-up-button">
+        </form>
     </div>
 
     <script>
