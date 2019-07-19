@@ -649,3 +649,14 @@ input {
 [name="submit-form"] {
     color: white !important;
 }
+
+.sign-up__skip-container {
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+.sign-up__skip {
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0 0;
+}

@@ -81,7 +81,6 @@ var createEditor = function() {
     });
 
     returnObj.getCodeObj = function() {
-        console.log("Getting code...");
         var code = cm.getValue();
         var obj;
         try {
@@ -145,7 +144,6 @@ $(function() {
         editor.trigger("usercode_error", e);
     });
 
-    console.log(app.worldController);
     app.worldCreator = createWorldCreator();
     app.world = undefined;
 
@@ -192,7 +190,6 @@ $(function() {
         });
 
         var codeObj = editor.getCodeObj();
-        console.log("Starting...");
         app.worldController.start(app.world, codeObj, window.requestAnimationFrame, autoStart);
     };
 

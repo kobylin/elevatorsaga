@@ -147,7 +147,6 @@ function presentWorld($world, world, floorTempl, elevatorTempl, elevatorButtonTe
 
 
 function presentCodeStatus($parent, templ, error) {
-    console.log(error);
     var errorDisplay = error ? "block" : "none";
     var successDisplay = error ? "none" : "block";
     var errorMessage = error;

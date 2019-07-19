@@ -62,7 +62,6 @@ var createWorldCreator = function() {
     };
 
     creator.createWorld = function(options) {
-        console.log("Creating world with options", options);
         var defaultOptions = { floorHeight: 50, floorCount: 4, elevatorCount: 2, spawnRate: 0.5 };
         options = _.defaults(_.clone(options), defaultOptions);
         var world = {floorHeight: options.floorHeight, transportedCounter: 0};

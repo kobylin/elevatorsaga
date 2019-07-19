@@ -16,7 +16,6 @@ $(function() {
       email: $form.find('[name="email"]').val(),
       phone: $form.find('[name="phone"]').val(),
       success: function() {
-        console.log("success");
         hideForm();
       }
     }).fail(function(e) {
@@ -31,4 +30,13 @@ $(function() {
   function hideForm() {
     $(".sign-up__container").hide();
   }
+
+  $(".sign-up__skip").on("click", function() {
+    hideForm();
+  });
+
+  console.log(
+    "%cHere you can inspect object. But not hacking :)",
+    "color: blue; font-size: x-large"
+  );
 });
