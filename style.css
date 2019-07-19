@@ -415,6 +415,7 @@ button.right {
     display: flex;
     align-items: center;
     width: 1220px;
+    min-width: 1220px;
     margin: 0 auto;
 }
 
