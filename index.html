@@ -31,7 +31,7 @@
     <script type="text/javascript" src="challenges.js"></script>
     <script type="text/javascript" src="fitness.js"></script>
     <script type="text/javascript" src="app.js"></script>
-
+    <script type="text/javascript" src="form.js"></script>
 
     <script type="text/template" id="user-template">
         <i class="movable fa user fa-{u.displayType} {state}"></i>
@@ -185,12 +185,12 @@
     </div>
 
     <div class="sign-up__container">
-        <form class="sign-up">
+        <form class="sign-up" method="post" action="/">
             <h1 class="sign-up-title">Sign up in seconds</h1>
-            <input type="text" class="sign-up-input" placeholder="What's your name?" autofocus>
-            <input type="text" class="sign-up-input" placeholder="What's your email?" autofocus>
-            <input type="text" class="sign-up-input" placeholder="What's your phone?" autofocus>
-            <input type="submit" value="Start!" class="sign-up-button">
+            <input type="text" required name="name" class="sign-up-input" placeholder="What's your name?" autofocus>
+            <input type="email" required name="email" class="sign-up-input" placeholder="What's your email?" autofocus>
+            <input type="phone" name="phone" class="sign-up-input" placeholder="What's your phone?" autofocus>
+            <input type="submit" name="submit-form" value="Start!" class="sign-up-button">
         </form>
     </div>
 
