@@ -660,3 +660,10 @@ input {
     font-weight: 300;
     padding: 10px 0 0;
 }
+
+.sign-up__policy {
+    margin-top: 10px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
