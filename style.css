@@ -634,8 +634,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*display: none;*/
-
+    display: none;
 }
 
 .documentation h2 {
